@@ -1,0 +1,75 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="innerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer Shield -->
+  <path
+    d="M50 5 L85 20 L85 45 C85 65 70 80 50 95 C30 80 15 65 15 45 L15 20 Z"
+    fill="url(#shieldGradient)"
+    filter="url(#glow)"
+  />
+  
+  <!-- Inner Shield -->
+  <path
+    d="M50 15 L75 25 L75 45 C75 60 62.5 72.5 50 85 C37.5 72.5 25 60 25 45 L25 25 Z"
+    fill="url(#innerGradient)"
+    opacity="0.8"
+  />
+  
+  <!-- Central Icon - Family/Location Symbol -->
+  <circle cx="50" cy="40" r="8" fill="white" opacity="0.9" />
+  <circle cx="40" cy="50" r="6" fill="white" opacity="0.7" />
+  <circle cx="60" cy="50" r="6" fill="white" opacity="0.7" />
+  
+  <!-- Connection Lines -->
+  <path
+    d="M50 40 L40 50 M50 40 L60 50 M40 50 L60 50"
+    stroke="white"
+    stroke-width="2"
+    opacity="0.8"
+    stroke-linecap="round"
+  />
+  
+  <!-- Location Pin -->
+  <path
+    d="M50 25 C47 25 45 27 45 30 C45 33 50 40 50 40 S55 33 55 30 C55 27 53 25 50 25 Z"
+    fill="white"
+    opacity="0.9"
+  />
+  <circle cx="50" cy="30" r="2" fill="url(#shieldGradient)" />
+  
+  <!-- Signal Waves -->
+  <path
+    d="M35 65 Q42.5 60 50 65 Q57.5 70 65 65"
+    stroke="white"
+    stroke-width="2"
+    fill="none"
+    opacity="0.6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M30 70 Q40 62.5 50 70 Q60 77.5 70 70"
+    stroke="white"
+    stroke-width="1.5"
+    fill="none"
+    opacity="0.4"
+    stroke-linecap="round"
+  />
+</svg>

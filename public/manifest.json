@@ -1,0 +1,42 @@
+{
+  "name": "SafeStep Family Tracking",
+  "short_name": "SafeStep",
+  "description": "Advanced family safety platform with real-time tracking and emergency alerts",
+  "start_url": "/?source=pwa&mode=app",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/Screenshot 2025-07-11 193952 copy.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "features": [
+    {
+      "name": "background-location",
+      "description": "Continuous location tracking for family safety"
+    },
+    {
+      "name": "gesture-detection", 
+      "description": "Emergency gesture controls"
+    },
+    {
+      "name": "emergency-alerts",
+      "description": "Professional emergency sound system"
+    }
+  ],
+  "prefer_related_applications": false,
+  "categories": ["safety", "family", "tracking"],
+  "lang": "en",
+  "dir": "ltr",
+  "serviceworker": {
+    "src": "/sw.js",
+    "scope": "/",
+    "update_via_cache": "none"
+  }
+}
